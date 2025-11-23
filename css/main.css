@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    height: 100vh;
+    width: 100%;
+}
+.header
+{
+    height: 100px;
+    width: 100%;
+    background: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav
+{
+    display: flex;
+    justify-content: space-around;
+}
+nav a
+{
+    font-size: 20px;
+    margin: auto 49px;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    color: rgba(0, 0, 0, 0.733);
+    font-weight: 500;
+    width: 100px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav a.active
+{
+    color: brown;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 12px #adacac;
+    border-radius: 22px;
+    animation: move 0.2s;
+}
+nav a:hover
+{
+    color: brown;
+}
+@keyframes move
+{
+    from
+    {
+        border-radius: 0px;
+        width: 100px;
+        height: 40px;
+        box-shadow: 0 0 0px;
+    }
+    to
+    {
+        border-radius: 22px;
+        width: 100px;
+        height: 70px;
+        box-shadow: 0 0 12px #adacac;
+    }
+}
+.header p
+{
+    color: rgb(60, 57, 57);
+    position: relative;
+    font-size: 30px;
+    font-weight: 500;
+    text-shadow: 0 0 12px rgba(0, 0, 0, 0.429);
+    left: 96px;
+}
+.banner
+{
+    height: 350px;
+    background: url(img/R-C.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.reducation
+{
+    height: 450px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.re-text
+{
+    position: relative;
+    height: 300px;
+    width: 550px;
+    left: 12em;
+
+}
+.re-text h1,.re-text p,.re-text a
+{
+    padding: 32px;
+}
+.re-text a button
+{
+    position: relative;
+    top: 11px;
+    width: 100px;
+    height: 25px;
+    background: #fff;
+    border: black 1px solid;
+    cursor: pointer;
+}
+.re-text a button:hover
+{
+    border-radius: 30px;
+    width: 120px;
+    height: 35px;
+    box-shadow: 1px 4px 12px #727171a6;
+    border: black 2px solid;
+    animation: q 0.2s;
+}
+@keyframes q
+{
+    from
+    {
+    width: 100px;
+    height: 25px;
+    box-shadow: 0;
+    }
+    to
+    {
+    width: 120px;
+    height: 35px;
+    box-shadow: 0px 4px 12px #727171a6;
+    }
+}
+.img
+{
+    background: url(img/河流.png);
+    width: 1200px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    right: 1em;
+    top: 1em;
+}
+.escape
+{
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+}
+.HR
+{
+    margin-top: 3em;
+}
+.escape h2
+{
+    font-size: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.escape h2 hr
+{
+    width: 70px;
+    height: 6px;
+    background: rgba(224, 70, 9, 0.936);
+    border-radius: 11px;
+}
+.a-img
+{
+    margin-top: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80%;
+}
+.a-img-left
+{
+    height: 100%;
+    width: 30%;
+}
+.a-img-right-up,.a-img-right-down
+{
+    height: 45%;
+}
+.a-img-left img,.a-img-right-up img,.a-img-right-down img
+{
+    width: 100%;
+    height: 100%
+}
+.a-img-right
+{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.food
+{
+    height: 55vh;
+    width: 100%;
+}
+.hR
+{
+    margin-top: 3em;
+}
+.food h2
+{
+    font-size: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.food h2 hr
+{
+    width: 70px;
+    height: 6px;
+    background: rgba(224, 70, 9, 0.936);
+    border-radius: 11px;
+}
+.Food
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.Food div
+{
+    margin-top: 5em;
+    width: 20%;
+    height: 350px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+.Food img
+{
+    width: 100%;
+    height: 100%
+}
+@keyframes p1
+{
+    from
+    {
+        transform: translateY(0px);
+    }
+    to
+    {
+        transform: translateY(-44px);
+    }
+}
+.Food div:hover
+{
+    transform: translateY(-44px);
+    animation: p1 0.4s;
+}
